@@ -1,0 +1,72 @@
+cd  --- change dir
+ls -- list
+pwd  --- present working dir
+ln  --- hard and soft link
+rm  --- remove
+mv --- move,rename
+cp  --- copy
+chmod  --- change thr read write exucute permission
+grep --- seprate the same value
+whoami --- what user
+wget --- create a http link and download file
+exit --- exit from the terminal
+zip {file.zip} file ---- zip the file 
+unzip  (file.zip) --- unzip the file
+ifconfig  ---- ipaddress
+nano --- open the text editer
+touch  ---- create a normal file
+cat   ---- read the text file
+mkdir   --- create directory
+ping  --- check ip live or dead
+sudo bash   --- root user
+ps -- run process
+top -- running task
+locate -- locate the path
+nslookup -- domain ip address
+whois --- domain name 
+file --- file type
+mkdir   ---- make dir
+rmdir  --- remove dir 
+\  --- create a file with space
+Alt+F  --- move between words
+Alt+B  --- move back between words
+ctrl+c  --- copy
+ctrl+v ---- paste
+ctrl+L ---- clear
+Alt+u ---- change capital
+Alt+l ---  change lower
+ctrl+k --- cut letter
+ctrl+y --- paste the words
+cal --- calender
+date --- current date
+poweroff --- shutdown
+reboot --- system reboot
+vi --- text edit
+gedit --- grapical text editer
+history  --- history commands
+less --- same as cat 
+tac --- same as a cat
+head  --- to display top 10 line
+tail  --- to display bottom 10 line
+wc  --- line num , word num , byte num
+type --  command type
+which ---- to mention the part of the command
+help --- to help the command process
+man -- it is used to list the details
+• --- every thing
+alias --- to create a new command alias sai="cd sai"
+hostname --- IP address
+netstat --- network connection, routing tables
+traceroute --- routes and hops used by packet
+time ls --- user and system time used
+& --- to do more than one operation at a time (unsynchronized execution)
+; --- one operation completes then other execute(synchronised)
+echo $? --- status of last executed command
+&& --- if first operation success, second happens
+// --- if first operation fails also second happens
+| --- op of one command is passed to other
+> --- to pass op of one to other
+sudo runlevel --- display current runlevel(0-6)
+mount --- to attach external filesystem to filesystem of system
+umount --- detaches the external file system from system hierarchy
+awk --- scripting language for file modification and automation
