@@ -1,0 +1,23 @@
+con = container
+Docker run con name ---- run the container
+docker ps --- current running container
+docker ps -a --- all docker container
+docker stop con name  --- stop the container
+docker rm con name --- remove the container
+docker images -- display the all images
+docker rmi con name ---remove the docker images
+docker pull image name --- pull the docker image to local
+docker exec con name --- execute the docker container
+docker run -d con name --- run the con in a background 
+docker attach name --- attach the docker id uniq
+docker run -d con name sleep (sec) --- to run the command in the sleep mod
+docker version --- to identify the version of the docker
+docker run -p 8080:3456 con name -- port mapping
+docker inspect con name --- display the details in a json format
+docker logs con name --- display the logs of con
+docker run img name:version --- to run the old version to
+docker build . --- build the docker images
+docker build . -t image name --- build and mention the image name
+docker history con name ---- to see the history of the con
+cat /root/{app-name}/Dockerfile  --- to see the image of the app
+
