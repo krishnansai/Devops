@@ -1,23 +1,43 @@
-con = container
+ con = container
 Docker run con name ---- run the container
+docker create con name  --- create a con 
+docker start -a con name   ---- to start a con
+docker system prune    ---- to show the stop, build networks of a con
 docker ps --- current running container
 docker ps -a --- all docker container
 docker stop con name  --- stop the container
+docker kill con name ---  kill the container
 docker rm con name --- remove the container
-docker images -- display the all images
+docker images -- display all images
 docker rmi con name ---remove the docker images
 docker pull image name --- pull the docker image to local
 docker exec con name --- execute the docker container
 docker run -d con name --- run the con in a background 
 docker attach name --- attach the docker id uniq
-docker run -d con name sleep (sec) --- to run the command in the sleep mod
+docker run -d con name sleep (sec) --- to run the command in the sleep mode
 docker version --- to identify the version of the docker
 docker run -p 8080:3456 con name -- port mapping
-docker inspect con name --- display the details in a json format
+docker inspect con name --- display the details in a JSON format
 docker logs con name --- display the logs of con
-docker run img name:version --- to run the old version to
-docker build . --- build the docker images
-docker build . -t image name --- build and mention the image name
+docker run img name: version --- to run the old version to identify the tag
+docker build. --- build the docker images
+docker build. -t image name --- build and mention the image name
 docker history con name ---- to see the history of the con
 cat /root/{app-name}/Dockerfile  --- to see the image of the app
-
+docker run redis --- to run the server 
+docker exec -it con id redis-cli  ---- to run in a cli mod
+docker exec -it con name sh, bash, Powershell, zsh --- to execute a con in a shell formate
+docker commit -c 'CMD ["comment"]' con id  ---- to create a manual image
+docker
+ run -t -d -v /home/Krrish/Desktop/sampledir/:/var/www/html --name good 
+day nginx  --- to change the container volume bind mount 
+ WORKDIR /usr/app  --- work dir app
+docker-compose up -d ---- to start a multiple containers 
+docker-compose down ---- to stop a multiple containers
+docker-compose up --build  ---- to rebuild the container
+restart type = no, always, on-failure, unless-stoped
+docker build -f Dockerfile.dev . --- to build the any type of docker file
+docker run -p 3000:3000 -v $(pwd):/app con  name ---- to be reference of main path of the apps
+docker
+ run -p 3000:3000 -v /app/node_modeules  -v $(pwd):/app con  name ---- 
+to be reference of main path of the apps to be reference as node 
