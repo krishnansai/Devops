@@ -29,6 +29,37 @@ ${var}var  ---- use { } to decular the variable
 echo "hello world $(whoami)"  --- to execute the shell command using $()
 echo 'hello world $HOME' --- doesn't execute the script
 \ --- to work like a single qoutes
+cat /etc/shells ---- to display total shells in our system
+echo $SHELL --- to display the current shell is our system
+ps $$  --- to display the current shell is our system
+ctrl + u ---- to erase the complete line
+ctrl + w --- to remove the particular word
+type -a (command name) --- to identify the command type
+#!/bin/bash --- to mention the execute path
+chmod +x filename ---- to change the permission of the file
+./filename ---- to execute the file from the terminal
+#!/usr/bin/env bash  --- to create a env on our bash file
+# ---- single line command
+<<(mention any word ending with the same name)  ----- to put a multi-line command
+example
+<<SAMPLE
+dkgjkndklgj
+dogged
+SAMPLE   ---- to end it
+variables two type
+   -system
+       upper case
+       env
+   - user-defined
+        lowercase
+    var="sai" 
+    echo $var --- to print the output
+    don't use space to declare the variable
+case sensitive 
+${var}var  ---- use { } to decular the variable
+echo "hello world $(whoami)"  --- to execute the shell command using $()
+echo 'hello world $HOME' --- doesn't execute the script
+\ --- to work like a single qoutes
 ls \  && pwd --- to use a multi line command in a same script
 unset SAMPLE --- to un set delete variable 
 read -p "ENTER USER NAME:"  (variable) --- to input the user name from prompt 
@@ -38,3 +69,79 @@ read -p "ENTER USER NAME:"  (variable) --- to input the user name from prompt
 echo $variable  ---- to print the user name
 echo $(( 1+1 )) --- to use operation +,- , /,%,*
 declare -i int=100 ---- to decule a integer data type
+readony variable ----- used to doesn't change the value
+${newvariable?errormessage} ---- to identiye a decular variable
+alias --- to set our own command
+PS1="TERMINAL"  ---- to change our own terminal command
+PS1="\u@defined name" ---- to custom our terminal
+echo $? --- to check the previes command state
+test 10 -gt 5 && echo "10 is greater" || echo "no" --- test command is used to return boolen values
+[ 10 -gt 15 ] ---- same like a test command
+
+if and elif condition
+if [ 10 -gt 5 ]
+then 
+      echo "10 is greater"
+elif [ 10 -gt 20 ]
+then 
+     echo "equal"
+else
+      echo "not"
+fi
+
+number comparisons
+gt --- geatherthan
+lt---- less than
+ge --- greater or equal to
+le --- less than or equal to
+
+string comparisons
+=
+!=
+-z ---- not null value check
+
+file comparisons
+ -b
+-c  
+-d  ---- to check a directory
+-f  ---- to check a regular file
+
+cli position
+echo $0 --- correct script variable 
+echo $IFS ---- tab char
+cat -stv <<< $IFS --- to display non printable char
+
+case statements switch case 
+
+case $var in 
+        "sai") echo "in side " ;;
+         "nmap") "scan tool" ;;
+          *) echo "no value" ll
+esac
+
+loops
+
+for 
+in 
+(()) 
+  for x in 1 2 3 4 5 6 7 8 
+   do
+        echo $x
+   done
+
+for (( i=1; i < 10 ; i++ ))
+do 
+      for(( j=1 ; j < 10 ; j++ ))
+      do
+             echo ${i}${j}   || printf "\n"
+       done
+done
+
+while
+while [ expression ]
+do
+....
+done
+
+
+
