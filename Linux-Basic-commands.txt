@@ -70,3 +70,4 @@ sudo runlevel --- display current runlevel(0-6)
 mount --- to attach external filesystem to filesystem of system
 umount --- detaches the external file system from system hierarchy
 awk --- scripting language for file modification and automation
+
