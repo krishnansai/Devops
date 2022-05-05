@@ -9,6 +9,7 @@ chmod +x filename ---- to change the permission of the file
 ./filename ---- to execute the file from the terminal
 #!/usr/bin/env bash  --- to create a env on our bash file
 # ---- single line command
+
 <<(mention any word ending with the same name)  ----- to put a multi-line command
 example
 <<SAMPLE
