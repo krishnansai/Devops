@@ -8,6 +8,7 @@ docker ps -a --- all docker container
 docker stop con name  --- stop the container
 docker kill con name ---  kill the container
 docker rm con name --- remove the container
+docker run con name --name (defult) --- to mentain the default name of con
 docker images -- display all images
 docker rmi con name ---remove the docker images
 docker pull image name --- pull the docker image to local
