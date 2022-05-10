@@ -1,28 +1,28 @@
 cd  --- change dir
 ls -- list
-pwd  --- present working dir
+PWD  --- present working dir
 ln  --- hard and soft link
 rm  --- remove
 mv --- move,rename
 cp  --- copy
-chmod  --- change thr read write exucute permission
+chmod  --- change the read-write execute permission
 grep --- seprate the same value
 whoami --- what user
-wget --- create a http link and download file
+wget --- create an HTTP link and download the file
 exit --- exit from the terminal
 zip {file.zip} file ---- zip the file 
 unzip  (file.zip) --- unzip the file
-ifconfig  ---- ipaddress
-nano --- open the text editer
+ifconfig  ---- ipaddressoo
+nano --- open the text editor
 touch  ---- create a normal file
 cat   ---- read the text file
 mkdir   --- create directory
-ping  --- check ip live or dead
+ping  --- check IP live or dead
 sudo bash   --- root user
-ps -- run process
+ps -- a run process
 top -- running task
 locate -- locate the path
-nslookup -- domain ip address
+nslookup -- domain IP address
 whois --- domain name 
 file --- file type
 mkdir   ---- make dir
@@ -37,7 +37,7 @@ Alt+u ---- change capital
 Alt+l ---  change lower
 ctrl+k --- cut letter
 ctrl+y --- paste the words
-cal --- calender
+cal --- calendar
 date --- current date
 poweroff --- shutdown
 reboot --- system reboot
@@ -46,28 +46,33 @@ gedit --- grapical text editer
 history  --- history commands
 less --- same as cat 
 tac --- same as a cat
-head  --- to display top 10 line
-tail  --- to display bottom 10 line
-wc  --- line num , word num , byte num
+head  --- to display the top 10 line
+tail  --- to display the bottom 10 line
+WC  --- line num, word num, byte num
 type --  command type
 which ---- to mention the part of the command
 help --- to help the command process
-man -- it is used to list the details
-• --- every thing
-alias --- to create a new command alias sai="cd sai"
+man -- it is used to listing the details
+• --- everything
+alias --- to create a new command alias sai=" cd sai"
 hostname --- IP address
 netstat --- network connection, routing tables
 traceroute --- routes and hops used by packet
 time ls --- user and system time used
 & --- to do more than one operation at a time (unsynchronized execution)
-; --- one operation completes then other execute(synchronised)
+; --- one operation completes then the other executes (synchronized)
 echo $? --- status of last executed command
-&& --- if first operation success, second happens
-// --- if first operation fails also second happens
+&& --- if the first operation success the second happens
+// --- if the first operation fails also second happens
 | --- op of one command is passed to other
 > --- to pass op of one to other
-sudo runlevel --- display current runlevel(0-6)
-mount --- to attach external filesystem to filesystem of system
-umount --- detaches the external file system from system hierarchy
+sudo runlevel --- display current run level(0-6)
+mount --- to attach external filesystem to filesystem of the system
+umount --- detaches the external file system from the system hierarchy
 awk --- scripting language for file modification and automation
-
+ping (domain name) ---- ping and find the IP address
+nc IP address port num ---- to get access 
+[GET / HTTP/1.1] --- to enroll the data
+[HEAD /HTTP/1.1] --- to enroll the head data
+[OPTIONS / HTTP/1.1] ---- to see the options
+dig domain name ---- to identify the IP address
