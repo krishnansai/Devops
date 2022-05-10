@@ -9,38 +9,6 @@ chmod +x filename ---- to change the permission of the file
 ./filename ---- to execute the file from the terminal
 #!/usr/bin/env bash  --- to create a env on our bash file
 # ---- single line command
-
-<<(mention any word ending with the same name)  ----- to put a multi-line command
-example
-<<SAMPLE
-dkgjkndklgj
-dogged
-SAMPLE   ---- to end it
-variables two type
-   -system
-       upper case
-       env
-   - user-defined
-        lowercase
-    var="sai" 
-    echo $var --- to print the output
-    don't use space to declare the variable
-case sensitive 
-${var}var  ---- use { } to decular the variable
-echo "hello world $(whoami)"  --- to execute the shell command using $()
-echo 'hello world $HOME' --- doesn't execute the script
-\ --- to work like a single qoutes
-cat /etc/shells ---- to display total shells in our system
-echo $SHELL --- to display the current shell is our system
-ps $$  --- to display the current shell is our system
-ctrl + u ---- to erase the complete line
-ctrl + w --- to remove the particular word
-type -a (command name) --- to identify the command type
-#!/bin/bash --- to mention the execute path
-chmod +x filename ---- to change the permission of the file
-./filename ---- to execute the file from the terminal
-#!/usr/bin/env bash  --- to create a env on our bash file
-# ---- single line command
 <<(mention any word ending with the same name)  ----- to put a multi-line command
 example
 <<SAMPLE
@@ -91,10 +59,15 @@ else
 fi
 
 number comparisons
-gt --- geatherthan
-lt---- less than
-ge --- greater or equal to
-le --- less than or equal to
+gt --- gather than <
+lt---- less than >
+ge --- greater or equal to <=
+le --- less than or equal to >=
+eq ---- equal to =
+ne ---- not equal to !=
+-a --- and &
+-o --- or |
+
 
 string comparisons
 =
@@ -143,6 +116,3 @@ while [ expression ]
 do
 ....
 done
-
-
-
