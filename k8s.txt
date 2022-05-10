@@ -1,0 +1,18 @@
+kubectl run ngix  --image=(img name)  --- run the pods in image 
+
+kubctl get pods  ---- to check the pod's details 
+
+kubctl  describe pod (image name)  --- details the pod 
+
+kubectl create deployment (name) ---- create deployment
+
+kubectl edit deployment (name) --- edit deployment
+
+kubectl delete deployment (name) --- delete deployment
+
+status of different k8s components 
+kubectl get nodes | pod | services | replicaset | deployment
+
+kubectl logs (pod name) --- log to console 
+
+kubectl exec -it (pod name) --- bin/bash -- get interactive terminal
