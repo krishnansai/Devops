@@ -76,3 +76,9 @@ nc IP address port num ---- to get access
 [HEAD /HTTP/1.1] --- to enroll the head data
 [OPTIONS / HTTP/1.1] ---- to see the options
 dig domain name ---- to identify the IP address
+sudo useradd -m (name)   --- to add a user
+sudo passwd (name)  ---- to set the password for the user
+sudo groupadd (name) --- to create a group 
+sudo usermod -a -G (group-name) (user-name) ----- to add a user into group
+getfacl (dir)  --- to display the all deatils of the dir
+sudo iftop  ---- to display the network speed
