@@ -1,0 +1,43 @@
+hehelm -h --- help command
+helm completion bash  --- to display the output of shell script
+helm list  ---- to display the version
+helm create (name) ---- to create the helm chart
+helm depandency build (folder name)  ---- to build the dependency on chart dir
+helm dep list (name) ---- to list the dependency what we can use on it
+helm dep update (dir name) --- it will update the chat folder in a current version
+helm dep update (dir name) ---- it will update all pakage
+helm env  ----- to display the helm environment
+helm get (all,hooks,values,notes,manifest) (name) ---- to display the information 
+helm install (kub name) (dir helm name)  ----- to deploy the k8s
+helm history (name) ---- to display the history
+helm del (kube-name) (helm name)  ---- delete the chart
+helm lint (chart name)  ---- check the error to run
+helm ls ---- to list the helm pakages
+helm pakage (name)  ----- to convert into compressed file
+helm diff upgrade (kub name) ( helm name) -- value (name)/values.yaml ---- to check the changes on it
+helm pull (chart name)  ---- to pull the helm chart name
+helm repo add
+helm repo update
+helm repo remove
+helm rollback (name) 1  ---- to create another one roll back
+helm search hub (name) --- to search the chart on cli 
+helm search repo (name) --- to search the chart on cli 
+helm status name
+helm install --debug --dry-run (relese-name) (chart folder)  ---- to check the release without install it
+helm get manifest (relese-name)  ---- to display the set names
+
+sprig library to use function on helm 
+
+{{ .Values.data}} ---- to pass the value from the functions
+
+{{- if eq .Values.data "us-e" }}
+style: true
+{{- end }} ---- to use (-) in starting to remove the new line
+
+
+{{- with .Values.tags }}
+machine: {{ .machine }}
+{{- end }}
+------ doesn't use the multiple line
+
+notes.txt ---- is used to write a commands in the exucte format
