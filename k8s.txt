@@ -1,8 +1,12 @@
 kubectl run ngix  --image=(img name)  --- run the pods in image 
 
-kubctl get pods  ---- to check the pod's details 
+kubectl get pods  ---- to check the pod's details 
 
-kubctl  describe pod (image name)  --- details the pod 
+kubectl  describe pod (image name)  --- details the pod 
+
+kubectl get nodes --- to display the nodes
+
+kubectl get pods -o wide ---- to display the details of pods
 
 kubectl create deployment (name) ---- create deployment
 
@@ -16,3 +20,71 @@ kubectl get nodes | pod | services | replicaset | deployment
 kubectl logs (pod name) --- log to console 
 
 kubectl exec -it (pod name) --- bin/bash -- get interactive terminal
+
+yml: 
+    apiVersion: v1
+    kind: Pod
+    metadata:
+        name: myapp-pod
+        labels:
+              app:
+    spec: 
+         container:
+            - name: nginx-con
+              image: nginx
+
+kubectl create -f pod-definition.yml  ----  to create k8s yml file
+
+kubectl apply -f pod.yml  ---- same as create command
+
+kubectl run nginx --image=nginx  --- to create an image
+
+kubectl describe pod (pod name) ---- to check the details of the pod
+
+kubectl delete pod (pod name) --- to delete the pod
+
+kubectl run nginx --image=nginx  --dry-run=client -o yaml > pod.yaml ---- do not create pod but we get sourcee of yaml
+
+kubectl edit pod (name)  --- to edit the configuration file
+
+kubectl get replicationcontroller  ------ to see the replication on the nods
+
+kubectl replace -f replica.yml  ------ to replace the replica file and run it
+
+kubectl scale --replicas=6 -f replica.yml   ----- another way to replica the pods
+
+kubectl get rs  ----- to display the replicasets
+
+kubectl describe pods   ----- to display the error on pods
+
+kubectl create -f /root/replicaset-definition-1.yaml  ---- to locate in root dir
+
+kubectl scale rs new-replica-set --replicas=5 ---- to replica 5
+
+kubectl get all  --- to see all commands thats were run it
+
+kubectl get deployments  ----  to get the deployments 
+
+kubectl set image deployment  
+
+kubectl rollout status deployment   ----- to check the status of the rollout
+
+kubectl rollout history deployment   ----- to check the history of the rollout
+
+kubectl rollout undo deployment   ----- to undo the rollout
+
+kubectl get svc   ---- to list the service where runing on the ip address
+
+kubectl describe svc kubernetes  -----   to display the port of the service 
+
+master node 
+  -api server ---- for all communication
+  -scheduler  -----  schedules pods on nodes
+  -controller manager  ----   runs controllers
+  -etcd  --- open source , distributed key-value database from os
+
+worker node 
+  -kubelet
+  -kube-proxy
+  -container runtime
+
