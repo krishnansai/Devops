@@ -8,7 +8,7 @@ helm dep update (dir name) --- it will update the chat folder in a current versi
 helm dep update (dir name) ---- it will update all pakage
 helm env  ----- to display the helm environment
 helm get (all,hooks,values,notes,manifest) (name) ---- to display the information 
-helm install (kub name) (dir helm name)  ----- to deploy the k8s
+helm install (name) (dir helm name) (opction --set (name=value)) ----- to deploy the k8s
 helm history (name) ---- to display the history
 helm del (kube-name) (helm name)  ---- delete the chart
 helm lint (chart name)  ---- check the error to run
@@ -25,7 +25,10 @@ helm search repo (name) --- to search the chart on cli
 helm status name
 helm install --debug --dry-run (relese-name) (chart folder)  ---- to check the release without install it
 helm get manifest (relese-name)  ---- to display the set names
-
+helm install --dry-run --debug --set costCode=SS45877
+ sai ./mychart/ --- to set from input using set command
+ 
+--set (name=value)
 sprig library to use function on helm 
 
 {{ .Values.data}} ---- to pass the value from the functions
@@ -41,3 +44,5 @@ machine: {{ .machine }}
 ------ doesn't use the multiple line
 
 notes.txt ---- is used to write a commands in the exucte format
+helm template sai ./mychart --- to display the template 
+helm get values name --- to get a used values
