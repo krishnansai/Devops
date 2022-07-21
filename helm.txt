@@ -39,6 +39,7 @@ style: true
 
 
 {{- with .Values.tags }}
+{{- toYaml . | nindent 2 }}  --- to print total list value
 machine: {{ .machine }}
 {{- end }}
 ------ doesn't use the multiple line
@@ -46,3 +47,49 @@ machine: {{ .machine }}
 notes.txt ---- is used to write a commands in the exucte format
 helm template sai ./mychart --- to display the template 
 helm get values name --- to get a used values
+helm history name --- to display error and log
+--atomic  ---- when chat goes error it forward to old release
+--timeout 7m3s ---- to control the time out
+--fource --- when upgrade happend it will stop all the pods and restart it
+--cleanup-on-failure --- when upgrade goes fail total fail log and seacute will delete automaticly
+
+chart.yaml {
+apiVersion:
+name:
+description:
+icon:
+keywords:
+home:
+sources:
+maintainers:
+}
+helm package name ----- to convert into zip file
+helm lint name ---- to check the error log info
+
+functions{
+- to avoid a blank spaces
+include --- to use pipeline
+qoutes
+template
+upper
+default
+nindent 4  --- new line with indent of 4 spaces
+}
+
+define variable
+{{ $myValue := "sai" }} --- assign a value
+{{ $myValue = "gok" }} --- reassign a value
+{{-if myValue }}
+
+for loop
+{{- range .Values.mychart.contry }}
+  {{ . | upper | qoutes }}
+{{- end }} 
+
+for loop disnory
+{{ - range $key, $value :=  .Values.image }}
+  - {{ $key }}: {{ $value }}
+{{- end }}
+
+helm get manifest name  ---- to see the detail file
+helm depandency update name ---- to update depandencny on chart
