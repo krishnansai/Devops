@@ -17,6 +17,8 @@ kubectl delete deployment (name) --- delete deployment
 status of different k8s components 
 kubectl get nodes | pod | services | replicaset | deployment
 
+kubectl delete pod (podname) --- to delete a single pod
+
 kubectl logs (pod name) --- log to console 
 
 kubectl exec -it (pod name) --- bin/bash -- get interactive terminal
@@ -49,7 +51,7 @@ kubectl edit pod (name)  --- to edit the configuration file
 
 kubectl get replicationcontroller  ------ to see the replication on the nods
 
-kubectl replace -f replica.yml  ------ to replace the replica file and run it
+kubectl replace -f replica.yml  ------ to replace the file from the exexting one replica file and run it
 
 kubectl scale --replicas=6 -f replica.yml   ----- another way to replica the pods
 
@@ -88,3 +90,18 @@ worker node
   -kube-proxy
   -container runtime
 
+use kind commends
+   kind create cluster --name (sai)
+   kind delete cluster --name (sai)
+
+minikube service (name) --url ---- to print the ip of the service
+
+kubectl get pod name -o yaml | more   ----- to display the yaml file
+
+kubectl get pod name -o wide  ----- to display details and ip of pods
+
+kubectl exec -it name -- /bin/sh  ----- to run on the terminal
+
+kubectl delete pod name  ---- to delete the pod
+
+container communicate with another container using localhost:port using network name space
