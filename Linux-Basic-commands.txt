@@ -37,6 +37,7 @@ Alt+u ---- change capital
 Alt+l ---  change lower
 ctrl+k --- cut letter
 ctrl+y --- paste the words
+ctrl+r --- to suggest the recent values
 cal --- calendar
 date --- current date
 poweroff --- shutdown
@@ -82,3 +83,19 @@ sudo groupadd (name) --- to create a group
 sudo usermod -a -G (group-name) (user-name) ----- to add a user into group
 getfacl (dir)  --- to display the all deatils of the dir
 sudo iftop  ---- to display the network speed
+sudo ufw allow/status/enable (port-nun)
+sudo ss -tupln  ---- to see the active ports
+"$(date +"%Y_%m_%d_%I_%M_%p")
+
+dir{
+/  ---- root dir
+/home  ---- to split the different user home page
+/var  ---- to store the log fille
+/etc  ---- to store the configu file
+/temp --- to store the temp files
+/opt  --- storing thrid pary app
+/lib ---- store library file
+/root --- admin/high privilages
+/bin  ---- binary files
+/dev  --- show extral device
+}
