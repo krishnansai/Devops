@@ -1,6 +1,5 @@
 # Devops
 
-
 Linux commands
 
 
