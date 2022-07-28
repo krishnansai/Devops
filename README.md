@@ -10,5 +10,4 @@ k8s commands
 
 shell scripting
 
-
 Helm 
