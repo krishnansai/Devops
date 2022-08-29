@@ -1,13 +1,21 @@
 cd  --- change dir
 ls -- list
+command 0 --- stdin
+command 1 --- stdout
+command 2 --- stderr
 PWD  --- present working dir
 ln  --- hard and soft link
 rm  --- remove
 mv --- move,rename
 cp  --- copy
+more ---- to see file in screen size
+more -2 --- to see first two numbers
+more +4 --- to see after 4 numbers
 chmod  --- change the read-write execute permission
 grep --- seprate the same value
 whoami --- what user
+whatis --- to known the command discription
+man ---- to know how to use the command
 wget --- create an HTTP link and download the file
 exit --- exit from the terminal
 zip {file.zip} file ---- zip the file 
@@ -21,6 +29,9 @@ ping  --- check IP live or dead
 sudo bash   --- root user
 ps -- a run process
 top -- running task
+head -5 ---- to display first 5 number
+tail -4 --- to print last 4 line
+sed -n '6,12p' filename --- to print condition line
 locate -- locate the path
 nslookup -- domain IP address
 whois --- domain name 
@@ -83,10 +94,13 @@ sudo groupadd (name) --- to create a group
 sudo usermod -a -G (group-name) (user-name) ----- to add a user into group
 getfacl (dir)  --- to display the all deatils of the dir
 sudo iftop  ---- to display the network speed
+sudo su - username --- to change the user 
 sudo ufw allow/status/enable (port-nun)
 sudo ss -tupln  ---- to see the active ports
 "$(date +"%Y_%m_%d_%I_%M_%p")
-
+chsh --- to change the shell
+vi :set number --- to display number in our script
+cat -n filename --- to display the number 
 dir{
 /  ---- root dir
 /home  ---- to split the different user home page
@@ -99,3 +113,6 @@ dir{
 /bin  ---- binary files
 /dev  --- show extral device
 }
+
+
+
